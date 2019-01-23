@@ -13,7 +13,7 @@ pipeline {
                 sh "mkdir /tmp/targetfolder"
                 git branch: 'master',
                    credentialsId: 'gitcred',
-                   url: 'https://github.com/billyogendo/backend.git/ tmp/targetfolder'
+                   url: 'https://github.com/billyogendo/wordpress.git/ tmp/targetfolder'
            }
        } 
     }
