@@ -19,7 +19,7 @@ pipeline {
                 sh "rm -rf $JENKINS_HOME/workspace/test/wordpress"
                 sh "git clone https://github.com/billyogendo/wordpress.git"
                 load "$JENKINS_HOME/workspace/test/wordpress/test.sh"
-                sh "sshpass -p 12345 ssh -o StrictHostKeyChecking=no 34.227.163.32
+                sh "sshpass -p 12345 ssh -o StrictHostKeyChecking=no 34.227.163.32"
                 sh "rm -rf /tmp/targetfolder"
                 sh "mkdir /tmp/targetfolder"
                 sh "git clone https://github.com/billyogendo/wordpress.git /tmp/targetfolder"
