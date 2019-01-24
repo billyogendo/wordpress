@@ -1,10 +1,7 @@
 pipeline {
     agent any
 
-    environment {
-        USER_CREDENTIALS = credentials('gitcred')
-    }
-
+    
     stages {
         stage('clone') {
             steps {
